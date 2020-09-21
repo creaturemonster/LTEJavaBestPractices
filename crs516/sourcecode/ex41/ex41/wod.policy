@@ -1,0 +1,12 @@
+grant {
+   permission java.net.SocketPermission "127.0.0.1:1099", "accept, connect, resolve";
+   permission java.net.SocketPermission "127.0.0.1:*", "accept, resolve";
+   permission java.net.SocketPermission "*", "connect, resolve";
+   permission java.io.FilePermission "./logs/logging.log", "read, write";
+   permission java.io.FilePermission "../data/*", "read";
+   permission java.io.FilePermission "../work", "read";
+   permission java.io.FilePermission "../work/-", "read, write, delete";
+   permission java.io.FilePermission "../codeTables/-", "read";
+   permission java.lang.RuntimePermission "getStackWalkerWithClassReference";
+   permission java.net.SocketPermission "student1:*", "accept,resolve";
+};
